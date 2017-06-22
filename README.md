@@ -1,5 +1,5 @@
 # Flashcards
-### Steven Galvin, Kat Gifford, jin camou, & Sowmya Dinavahi June 19th, 2017
+### Steven Galvin, Kat Gifford, Jin Camou, & Sowmya Dinavahi June 19th, 2017
 [![Travis](https://img.shields.io/travis/rust-lang/rust.svg?style=plastic)](https://github.com/steven-galvin/flashcards)
 
 This web app was made primarily with Angular 4 and the Angular CLI, Typescript, and the Firebase Database. It's purpose is to show off our knowledge of the Javascript course from Epicodus and our efficiency with the above. Flashcards is a simple app designed to give the user the ability to see a list of subjects as well as view their specific flashcards on a dynamic page. The user can view the technical term or question and click the card to show the definition or answer. It is a great study tool for not only Epicodus students, but any aspiring software developer. Early versions of the app will focus on foundational software development terms and concepts, Ruby on Rails, Singular, Angular 4, and Javascript. Future versions will add flashcards for other languages and frameworks like PHP, C#, and React.  
@@ -12,20 +12,24 @@ You can view the live site here {link coming soon}
 ## Planning
 
 ### 1. Configuration/dependencies
-  The app will primarily use Angular 4, the AngularCLI, Firebase database, and Typescript. It was made with what we learned from Epicodus' Javascript course.
-  <!-- Stretch goals include:
-    * Using Sass to style the page better.
-    * Hosting the site live -->
+    The app will primarily use Angular 4, the AngularCLI, Firebase database, and Typescript. It was made with what we learned from Epicodus' Javascript course.
+    <!-- Stretch goals include:
+      * Using Sass to style the page better.
+      * Hosting the site live -->
 
-### 2. User Stories
-  * As a user, I'd like to visit a page to see a list of all subjects.
-  * As a user, I'd like to click a subject and see a list of flashcards associated with that subject.
-  * As a user, I'd like the option to visit an "About" page that explains what the app is, and what it does.
-  * As a user, I'd like all data persisted in a database, so it's always there when I need it.
-  * As a user, I'd like to filter the list of flashcards depending on a theme (i.e. specifically words and definition v.s. questions and concepts)
-  * As an administrator, I want to add new subjects and flashcards.
-  * As an administrator, I want to edit subjects and flashcards, in case I make a mistake, or need to update their details.
-  * As an administrator, I need the option to delete subjects and flashcards, in case it becomes deprecated or unnecessary.
+
+    | Behavior | Input | Output |
+    |----------|-------|--------|
+    | User visits the splash page | User clicks on subject's icon | A list of term's flashcards gets displayed associated with that subject |
+    | User visits the about page | User clicks on **about** page route on the nav bar| User can view the creators of the site with a profile image|
+    | User can click on categories drop down list | User chooses **"fundamentals"** from category drop down list| list of flashcards under **"fundamentals"** category list |
+    | User can use the **search by keywords** pipe | User input "object" as keyword | list of flashcards match with "object" keyword list |
+    | User can use **quizMe** option to try learning something random | User clicks on the **quizMe** | A random flashcard gets generated with definition |
+    | Admin can add new flashcards| Admin input fields and add a new term flashcard | A new flashcard get added to the database |
+    | Admin can edit the flashcards | Admin clicks on edit button | Live Edits the properties of the flashcards |
+    | Admin can delete the flashcards | Admin clicks on delete button | flashcard gets removed of the list |
+    | Admin has access to do the crud functionality with login credentials once they sign up | Admin enter the login id and password | Admin enters the dashboard and has access to do crud functionality |
+
 
 ### 3. Integration
   * Root component/Index page
@@ -60,10 +64,10 @@ You will need the following things properly installed on your computer.
 
 As of writing this README, these instructions work on MacOS.
 
-* Run `$ git clone <this-repository-url>`
-* Then `$ cd flashcards`
-* Once in the flashcards folder, run `$ npm install`, `$bower init`(just press enter through the prompts), `$ bower install bootstrap --save`, and `$ bower install`
-* You will need to remake the api-keys.ts file. Login to firebase and create your own project here https://firebase.google.com/
+  * Run `$ git clone <this-repository-url>`
+  * Then `$ cd flashcards`
+  * Once in the flashcards folder, run `$ npm install`, `$bower init`(just press enter through the prompts), `$ bower install bootstrap --save`, and `$ bower install`
+  * You will need to remake the api-keys.ts file. Login to firebase and create your own project here https://firebase.google.com/
   * Once logged in, click on 'Go To Console'.
   * Then click 'Add project', give it a name, and select your region.
   * Next, click 'Add Firebase to your web app'.
@@ -78,9 +82,9 @@ var config = {
     messagingSenderId: "xxxx"
   };
 ```
-  * Create an `api-keys.ts` file inside the app directory and copy the block of code into it.
-  * Replace `var config` with `export var masterFirebaseConfig`
-  * To finish setting firebase up, go to firebase and and go into the database tab.
+    * Create an `api-keys.ts` file inside the app directory and copy the block of code into it.
+    * Replace `var config` with `export var masterFirebaseConfig`
+    * To finish setting firebase up, go to firebase and and go into the database tab.
     * Click on the button made of three dots.
     * Select the Import JSON option.
     * Select browse, navigate to the project folder, and open the `sample-subjects.json` file.
@@ -88,10 +92,10 @@ var config = {
 
 ## Running / Development
 
-Now that everything you need should be installed and setup, we can run it with angular.
+  Now that everything you need should be installed and setup, we can run it with angular.
 
-* Run `$ ng serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+  * Run `$ ng serve`
+  * Visit your app at [http://localhost:4200](http://localhost:4200).
 
 ## Built With
 
