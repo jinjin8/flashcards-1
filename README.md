@@ -64,7 +64,7 @@ As of writing this README, these instructions work on MacOS.
 
   * Run `$ git clone <this-repository-url>`
   * Then `$ cd flashcards`
-  * Once in the flashcards folder, run `$ npm install`, `$bower init`(just press enter through the prompts), `$ bower install bootstrap --save`, and `$ bower install`
+  * Once in the flashcards folder, run `$ npm install`, `$bower init`(just press enter through the prompts), `$ bower install bootstrap --save`,`$ bower install jquery --save`, and `$ bower install`
   * You will need to remake the api-keys.ts file. Login to firebase and create your own project here https://firebase.google.com/
   * Once logged in, click on 'Go To Console'.
   * Then click 'Add project', give it a name, and select your region.
@@ -91,7 +91,6 @@ As of writing this README, these instructions work on MacOS.
     }
     ```
   * **You can seed your DB using the information provided in the root directory of this repo, labeled sample-flashcards.json**
-  * Once you're all done setting up, run `$ ng s` to start the angular server. Visit <a href="localhost:4200">localhost:4200</a> to see the site in action!
 
 
 ## Running / Development
