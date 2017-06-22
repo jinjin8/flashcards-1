@@ -1,7 +1,9 @@
-<img class="github-logo" src="https://lh4.ggpht.com/qtDHMDah3-ZW81g8h9Ra63pFsIyF0OyFPAkP7ToNQZNRWiXotr0o9tuDB3yz2RCUtXU=w300" align="right" />
+<img class="github-logo" src="https://d30y9cdsu7xlg0.cloudfront.net/png/20461-200.png" align="right"/>
 
 # Flashcards
+
 ### Steven Galvin, Kat Gifford, Jin Camou, & Sowmya Dinavahi June 19th, 2017
+
 [![Travis](https://img.shields.io/travis/rust-lang/rust.svg?style=plastic)](https://github.com/steven-galvin/flashcards)
 [![npm version](https://badge.fury.io/js/%40angular%2Fcore.svg)](https://badge.fury.io/js/%40angular%2Fcore)
 
