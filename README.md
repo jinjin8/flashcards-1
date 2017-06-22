@@ -70,29 +70,15 @@ As of writing this README, these instructions work on MacOS.
   * Then click 'Add project', give it a name, and select your region.
   * Next, click 'Add Firebase to your web app'.
   * Grab this block of code:
-```
-var config = {
-    apiKey: "xxxx",
-    authDomain: "xxxx.firebaseapp.com",
-    databaseURL: "https://xxxx.firebaseio.com",
-    projectId: "xxxx",
-    storageBucket: "",
-    messagingSenderId: "xxxx"
-  };
-```
-  * Create a new database with <a href="https://firebase.google.com/docs/database/security/quickstart">read, write rules set to "true"</a>
-  * Download this repo
-  * In the app folder of the local repo _(located in > flashcards/src/app/)_ create a file called **api-keys.ts**  
-  * in the api-keys.ts file, add:
     ```
-    export var masterFirebaseConfig = {
-      apiKey: "Your API info",
-      authDomain: "Your API info",
-      databaseURL: "Your API info",
-      projectId: "Your API info",
-      storageBucket: "Your API info",
-      messagingSenderId: "Your API info"
-    };
+      var config = {
+          apiKey: "xxxx",
+          authDomain: "xxxx.firebaseapp.com",
+          databaseURL: "https://xxxx.firebaseio.com",
+          projectId: "xxxx",
+          storageBucket: "",
+          messagingSenderId: "xxxx"
+        };
     ```
   * replace "Your API info" with your new database information _(in the Firebase console, this is located in Database > Overview > Add Firebase to your web app)_
   * next, set your database permissions in firebase by navigating to > Database > Rules and set both 'read' and 'write' to 'true'
