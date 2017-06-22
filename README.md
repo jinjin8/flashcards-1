@@ -11,9 +11,18 @@ You can view the live site here {link coming soon}
 
 ## Planning
 
-### 1. Configuration/dependencies
-    The app will primarily use Angular 4, the AngularCLI, Firebase database, and Typescript. It was made with what we learned from Epicodus' Javascript course.
+## Prerequisites
 
+You will need the following things properly installed on your computer.
+
+* [Git](https://git-scm.com/)
+* [Node.js](https://nodejs.org/) (with NPM)
+* [Typescript](https://www.typescriptlang.org/)
+* [Angular CLI](https://cli.angular.io/)
+
+### 1. Configuration/dependencies
+
+The app will primarily use  AngularCLI, Firebase database, and Typescript. It was made with what we learned from Epicodus' Javascript course.
 
 
 ### 2. Specifications:
@@ -32,33 +41,22 @@ You can view the live site here {link coming soon}
 
 
 ### 3. Integration
-  * Root component/Index page
-  * Contact page
-  * About page
-  * List subjects page
-  * Dynamic subjects pages
-  * Admin page with CRUD functionality for flashcards
+  * Root component/Index page contains the dynamic route to flashcards associated with subject icons.
+  * About page contains the information on the developers.
+  * Terms page contains a list of terms and flashcards associated with categories.
+  * Admin/User can sign up with any email and get access to do crud functionality.
 
 ### 4. UX/UI
   * Bootstrap
   * Animations for better user experience
   * Flex Box
   * Parallax
-  * Sass
+  * css
 
 ### 5. Polish
   * Refactor code.
   * Delete unused code.
   * Make README awesome.
-
-## Prerequisites
-
-You will need the following things properly installed on your computer.
-
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with NPM)
-* [Typescript](https://www.typescriptlang.org/)
-* [Angular 4](https://angularjs.org/)
 
 ## Installation
 
@@ -82,13 +80,33 @@ var config = {
     messagingSenderId: "xxxx"
   };
 ```
-    * Create an `api-keys.ts` file inside the app directory and copy the block of code into it.
-    * Replace `var config` with `export var masterFirebaseConfig`
-    * To finish setting firebase up, go to firebase and and go into the database tab.
-    * Click on the button made of three dots.
-    * Select the Import JSON option.
-    * Select browse, navigate to the project folder, and open the `sample-subjects.json` file.
-    * Select Import and your database should be complete!
+  * Create a new database with <a href="https://firebase.google.com/docs/database/security/quickstart">read, write rules set to "true"</a>
+  * Download this repo
+  * In the app folder of the local repo _(located in > flashcards/src/app/)_ create a file called **api-keys.ts**  
+  * in the api-keys.ts file, add:
+    ```
+    export var masterFirebaseConfig = {
+      apiKey: "Your API info",
+      authDomain: "Your API info",
+      databaseURL: "Your API info",
+      projectId: "Your API info",
+      storageBucket: "Your API info",
+      messagingSenderId: "Your API info"
+    };
+    ```
+  * replace "Your API info" with your new database information _(in the Firebase console, this is located in Database > Overview > Add Firebase to your web app)_
+  * next, set your database permissions in firebase by navigating to > Database > Rules and set both 'read' and 'write' to 'true'
+    ```
+    {
+      "rules": {
+        ".read": true,
+        ".write": true
+      }
+    }
+    ```
+  * **You can seed your DB using the information provided in the root directory of this repo, labeled sample-flashcards.json**
+  * Once you're all done setting up, run `$ ng s` to start the angular server. Visit <a href="localhost:4200">localhost:4200</a> to see the site in action!
+
 
 ## Running / Development
 
@@ -113,13 +131,13 @@ var config = {
 
 ## Authors
 
-Steven Galvin, Kat Gifford, jin camou, & Sowmya Dinavahi
+Steven Galvin, Kat Gifford, Jin Camou, & Sowmya Dinavahi
 
 ## License
 
 MIT License
 
-Copyright (c) Steven Galvin, Kat Gifford, jin camou, & Sowmya Dinavahi, 2017
+Copyright (c) Steven Galvin, Kat Gifford, Jin Camou, & Sowmya Dinavahi, 2017
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
