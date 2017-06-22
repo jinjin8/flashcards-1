@@ -13,22 +13,22 @@ You can view the live site here {link coming soon}
 
 ### 1. Configuration/dependencies
     The app will primarily use Angular 4, the AngularCLI, Firebase database, and Typescript. It was made with what we learned from Epicodus' Javascript course.
-    <!-- Stretch goals include:
-      * Using Sass to style the page better.
-      * Hosting the site live -->
 
 
-    | Behavior | Input | Output |
-    |----------|-------|--------|
-    | User visits the splash page | User clicks on subject's icon | A list of term's flashcards gets displayed associated with that subject |
-    | User visits the about page | User clicks on **about** page route on the nav bar| User can view the creators of the site with a profile image|
-    | User can click on categories drop down list | User chooses **"fundamentals"** from category drop down list| list of flashcards under **"fundamentals"** category list |
-    | User can use the **search by keywords** pipe | User input "object" as keyword | list of flashcards match with "object" keyword list |
-    | User can use **quizMe** option to try learning something random | User clicks on the **quizMe** | A random flashcard gets generated with definition |
-    | Admin can add new flashcards| Admin input fields and add a new term flashcard | A new flashcard get added to the database |
-    | Admin can edit the flashcards | Admin clicks on edit button | Live Edits the properties of the flashcards |
-    | Admin can delete the flashcards | Admin clicks on delete button | flashcard gets removed of the list |
-    | Admin has access to do the crud functionality with login credentials once they sign up | Admin enter the login id and password | Admin enters the dashboard and has access to do crud functionality |
+
+### 2. Specifications:
+
+| Behavior | Input | Output |
+|----------|-------|--------|
+| User visits the splash page | User clicks on subject's icon | A list of term's flashcards gets displayed associated with that subject |
+| User visits the about page | User clicks on **about** page route on the nav bar| User can view the creators of the site with a profile image|
+| User can click on categories drop down list | User chooses **"fundamentals"** from category drop down list| list of flashcards under **"fundamentals"** category list |
+| User can use the **search by keywords** pipe | User input "object" as keyword | list of flashcards match with "object" keyword list |
+| User can use **quizMe** option to try learning something random | User clicks on the **quizMe** | A random flashcard gets generated with definition |
+| Admin can add new flashcards| Admin input fields and add a new term flashcard | A new flashcard get added to the database |
+| Admin can edit the flashcards | Admin clicks on edit button | Live Edits the properties of the flashcards |
+| Admin can delete the flashcards | Admin clicks on delete button | flashcard gets removed of the list |
+| Admin has access to do the crud functionality with login credentials once they sign up | Admin enter the login id and password | Admin enters the dashboard and has access to do crud functionality |
 
 
 ### 3. Integration
