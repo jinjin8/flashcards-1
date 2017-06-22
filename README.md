@@ -13,7 +13,6 @@ You can view the live site here {link coming soon}
 ## Landing Page:
 ![](./src/assets/images/temp.png "Flashcards")
 
-## Planning
 
 ## Prerequisites
 
@@ -33,18 +32,20 @@ The app will primarily use  AngularCLI, Firebase database, and Typescript. It wa
 
 | Behavior | Input | Output |
 |----------|-------|--------|
-| User visits the splash page | User clicks on subject's icon | A list of term's flashcards gets displayed associated with that subject |
+| User visits the splash page | User clicks on subject's icon | A list of flashcards associated with that subject are displayed |
 | User visits the about page | User clicks on **about** page route on the nav bar| User can view the creators of the site with a profile image|
 | User can click on categories drop down list | User chooses **"fundamentals"** from category drop down list| list of flashcards under **"fundamentals"** category list |
 | User can use the **search by keywords** pipe | User input "object" as keyword | list of flashcards match with "object" keyword list |
 | User can use **quizMe** option to try learning something random | User clicks on the **quizMe** | A random flashcard gets generated with definition |
-| Admin can add new flashcards| Admin input fields and add a new term flashcard | A new flashcard get added to the database |
-| Admin can edit the flashcards | Admin clicks on edit button | Live Edits the properties of the flashcards |
+| User can SignUp to create an account with login credentials | User enters their login email and password | User enters the dashboard and has access to add and edit their own flashcards |
+| User can add new flashcards| User input fields and add a new term flashcard | A new flashcard get added to the database |
+| User can edit the flashcards | User clicks on edit button | Dynamically edits the properties of the flashcards |
 | Admin can delete the flashcards | Admin clicks on delete button | flashcard gets removed of the list |
-| Admin has access to do the crud functionality with login credentials once they sign up | Admin enter the login id and password | Admin enters the dashboard and has access to do crud functionality |
+| Admin has access to CRUD functionality with login credentials once they sign up | Admin enters their login email and password | Admin enters the dashboard and has access to full CRUD functionality |
 
 
 ### 3. Integration
+
   * Root component/Index page contains the dynamic route to flashcards associated with subject icons.
   * About page contains the information on the developers.
   * Terms page contains a list of terms and flashcards associated with categories.
@@ -52,15 +53,10 @@ The app will primarily use  AngularCLI, Firebase database, and Typescript. It wa
 
 ### 4. UX/UI
   * Bootstrap
-  * Animations for better user experience
-  * Flex Box
-  * Parallax
-  * css
+  * Animations for flashcards
+  * Flex Box Container
+  * CSS
 
-### 5. Polish
-  * Refactor code.
-  * Delete unused code.
-  * Make README awesome.
 
 ## Installation
 
