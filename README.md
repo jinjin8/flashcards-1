@@ -1,5 +1,3 @@
-<img class="github-logo" src="https://d30y9cdsu7xlg0.cloudfront.net/png/20461-200.png" align="right"/>
-
 # Flashcards
 
 ### Steven Galvin, Kat Gifford, Jin Camou, & Sowmya Dinavahi June 19th, 2017
